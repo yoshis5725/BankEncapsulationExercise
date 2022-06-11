@@ -6,7 +6,11 @@ namespace BankEncapsulationExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // creating new bank account
+            var newAccount = new BankAccount();
+
+            newAccount.Deposit(500);
+            Console.Write($"Account Balance - ${newAccount.GetBalance()}");
         }
     }
 }
